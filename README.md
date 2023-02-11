@@ -14,6 +14,6 @@ In this repository, I want to show my small projects related to mathematics, imp
 <div id="badges">
 For your convenience, you can test the main projects on a
   </a>
-  <a href="https://replit.com/@AndrewPavlyuk">
+  <a href="https://replit.com/@AndrewPavlyuk?tab=repls">
   <img src="https://img.shields.io/badge/-replit-black?logo=replit-&logoColor=orange&style=for-the-badge">
 </div>
