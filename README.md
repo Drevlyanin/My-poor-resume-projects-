@@ -13,5 +13,7 @@
 In this repository, I want to show my small projects related to mathematics, importing third-party libraries and setting them up, interaction between python and messengers.
 <div id="badges">
 For your convenience, you can test the main projects on a
+  </a>
+  <a href="https://replit.com/@AndrewPavlyuk">
   <img src="https://img.shields.io/badge/-replit-black?logo=replit-&logoColor=orange&style=for-the-badge">
 </div>
