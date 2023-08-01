@@ -1,0 +1,29 @@
+# This code is for creating a backup of files and directories from the source 'C:\\'
+# and saving the archive in the target directory 'D:\\'. The archive will have a timestamp
+# in its name.
+
+import os
+import time
+import zipfile
+
+# Define the source directory that needs to be backed up
+source = ['']
+
+# Define the target directory where the backup archive will be stored
+target_dir = ''
+
+# Create the target path with the timestamp in its name
+target = os.path.join(target_dir, time.strftime('%Y%m%d%H%M%S') + '.zip')
+
+# Create a ZIP file with the target path and compress the files using ZIP_DEFLATED method
+with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    # Traverse the source directory and its subdirectories
+    for root, _, files in os.walk(source[0]):
+        # Add each file to the ZIP archive with its relative path
+        for file in files:
+            file_path = os.path.join(root, file)
+            arcname = os.path.relpath(file_path, source[0])
+            zipf.write(file_path, arcname)
+
+# Print a success message if the backup was created successfully
+print('Backup successfully created at', target)
