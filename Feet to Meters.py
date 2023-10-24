@@ -8,8 +8,8 @@ def calculate(*args):
     except ValueError:
         pass
 
-root = Tk() # Создание корневого окна приложения.
-root.title("Feet to Meters") # Название окна.
+root = Tk()
+root.title("Feet to Meters")
 
 mainframe = ttk.Frame(root, padding="3 3 12 12") # Создание обьекта Frame, который является контейнером для виджетов.
 mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
